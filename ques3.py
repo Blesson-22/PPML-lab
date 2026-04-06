@@ -1,6 +1,10 @@
-import pandas as pd
-s= pd.Series(['1,000','2,500','3,750'])
-#remove commas and convert it into float
-float_s = s.str.replace(',',"").astype(float)
-print(float_s)
-                        
+
+inp = input("Enter a string :- ")
+LIST1 = inp.split(" ")
+print(LIST1)
+print("\nElements of LIST1 with index are :- ")
+for i,v in enumerate(LIST1):
+    print(i,v)
+LIST2 = [x for x in range(len(LIST1))]
+LIST3 = list(zip(LIST1,LIST2))
+print(LIST3)
